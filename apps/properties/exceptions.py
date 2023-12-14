@@ -1,6 +1,7 @@
-from django.apps import AppConfig
+
+from rest_framework.exceptions import APIException
 
 
-class PropertiesConfig(AppConfig):
-    default_auto_field = "django.db.models.BigAutoField"
-    name = "apps.properties"
+class PropertyNotFound(APIException):
+    status_code = 404
+    deafult_detail = "The requested property does not exist"
