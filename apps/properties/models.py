@@ -173,4 +173,3 @@ class PropertyViews(TimeStampedUUIDModel):
     class Meta:
         verbose_name = "Total Views on Property"
         verbose_name_plural = "Total Property Views"
-
