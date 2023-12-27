@@ -5,9 +5,8 @@ ENV_FILE_PARAM = --env-file ./millionaire/.env
 endif
 
 build:
-	docker compose up --build -d --remove-orphans0....................................
-	1
-.2
+	docker compose up --build -d --remove-orphans
+
 up:
 	docker compose up -d
 
